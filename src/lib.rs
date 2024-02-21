@@ -277,7 +277,7 @@ See endpoint docs at <https://plaid.com/docs/api/institutions/#institutionsget_b
             client: &self,
             institution_id: institution_id.to_owned(),
             country_codes: country_codes.iter().map(|&x| x.to_owned()).collect(),
-            options: None,
+            options: Some(InstitutionsGetByIdRequestOptions{ include_optional_metadata: Some(true), include_status: None, include_auth_metadata: None, include_payment_initiation_metadata: None }),
         }
     }
     /**Remove an Item

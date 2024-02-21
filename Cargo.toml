@@ -9,9 +9,6 @@ readme = "README.md"
 license = "MIT"
 repository = "https://github.com/libninjacom/plaid-rs"
 
-[workspace]
-members = []
-
 [dependencies]
 anyhow = "1.0.57"
 httpclient = "0.2.0"
